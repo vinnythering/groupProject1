@@ -8,17 +8,30 @@ using namespace std;
 int main()
 
 {
-	double p;
-	int u;
-	string d;
+	double p = 0;
+	int u = 0;
+	string d; 
 	
 	cout << "Welcome";
-	cout << "\nPrice must be greater then 0";
-	cout << "\n Please enter the price for item 1:";
-	cin >> p;
+	cout << "\nPlease enter the price for item 1:";
+	while (p <= 0)
+	{
+		cin >> p;
+		if (p <= 0)
+		{
+			cout << "\nPlease enter a valid number.";
+		}	
+	}
 	cout << "\nInventory must be greater than 0";
 	cout << "\nPlease enter the units on hand for item 1:";
-	cin >> u;
+	while (u <= 0)
+	{
+		cin >> u;
+		if (u <= 0)
+		{
+			cout << "\nPlease enter a valid number.";
+		}	
+	}
 	cout << "\n Please enter the description for item 1:";
 	cin >> d;
 	cout << "\nDisplay all items:";
