@@ -8,20 +8,18 @@ using namespace std;
 int main()
 
 {
-
+	double p;
+	int u;
+	string d;
+	
 	cout << "Welcome";
 	cout << "\nPrice must be greater then 0";
-		double p;
 	cout << "\n Please enter the price for item 1:";
 	cin >> p;
 	cout << "\nInventory must be greater than 0";
 	cout << "\nPlease enter the units on hand for item 1:";
-
-	int u;
 	cin >> u;
 	cout << "\n Please enter the description for item 1:";
-		string d;
-
 	cin >> d;
 	cout << "\nDisplay all items:";
 	RetailItem obj1(d, u, p);
