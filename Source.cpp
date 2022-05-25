@@ -85,7 +85,8 @@ void mainMenu()
 			printReport();
 			break;
 		case 5:
-			return 0;
+			quitProgram();
+			break;
 	}
 }
 
@@ -236,3 +237,16 @@ void newFurniture()
 }
 
 
+void quitProgram()
+{
+	ifstream inFile;
+	ofstream outFile;
+
+	inFile.open("inventory.txt");
+	outFile.open("inventory.txt");
+	outFile << fixed << showpoint << setprecision(2);
+	outfile << manufacturer.appliance[] << " " << color.appliance[] << " " << description.appliance[] << " " << cost.appliance[] << " " << sku.appliance[] << endl;
+	outfile << manufacturer.digitalMedia[] << " " << description.digitalMedia[] << " " << cost.digitalMedia[] << " " << sku.digitalMedia[] << endl;
+	outfile << manufacturer.furniture[] << " " << color.furniture[] << " " << description.furniture[] << " " << cost.furniture[] << " " << sku.furniture[] << endl;
+		
+}
