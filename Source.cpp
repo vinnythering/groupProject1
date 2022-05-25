@@ -1,6 +1,7 @@
 
 #include <iostream>
-#include "RetailItem.h"
+#include "classes.h"
+#include "child.h"
 #include <string>
 
 using namespace std;
@@ -35,9 +36,9 @@ int main()
 	cout << "\n Please enter the description for item 1:";
 	cin >> d;
 	cout << "\nDisplay all items:";
-	RetailItem obj1(d, u, p);
+	item obj1(d, u, p);
 	cout << "\nDescription" << obj1.getDescription() << "\nunits:" << obj1.getUnitsOnHand() << "\nPrice:" << obj1.getPrice();
-	RetailItem obj2("Jeans", 40, 34.95);
+	item obj2("Jeans", 40, 34.95);
 	cout << "\nDescription" << obj2.getDescription() << "\nunits:" << obj2.getUnitsOnHand() << "\nPrice:" << obj2.getPrice();
 
 	system("pause");
