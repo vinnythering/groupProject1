@@ -6,6 +6,8 @@
 
 using namespace std;
 
+void mainMenu();
+
 int main()
 
 {
@@ -45,3 +47,192 @@ int main()
 	return 0;
 
 }
+
+void mainMenu()
+{
+	int choice = 0;
+	
+	cout << "Main Menu" << endl << endl;
+	cout << "Enter a number to choose a menu option." << endl;
+	cout << "1) Enter new item." << endl;
+	cout << "2) Enter an order." << endl;
+	cout << "3) Sale" << endl;
+	cout << "4) Print complete report." << endl;
+	cout << "5) Quit." << endl << endl;
+	cout << "Enter: ";
+	do
+	{
+		cin >> choice;
+		if (choice <= 0 || choice > 5)
+		{
+			cout << "Please enter a valid option: ";
+			continue;
+		}
+	}
+	
+	switch (choice)
+	{
+		case 1:
+			newItem();
+			break;
+		case 2:
+			order();
+			break;
+		case 3:
+			sale();
+			break;
+		case 4:
+			printReport();
+			break;
+		case 5:
+			return 0;
+	}
+}
+
+void newItem()
+{
+	int choice = 0;
+	
+	cout << "New Item" << endl << endl;
+	cout << "Enter a number to choose a menu option." << endl;
+	cout << "1) Add appliance." << endl;
+	cout << "2) Add digital media." << endl;
+	cout << "3) Add furniture" << endl;
+	cout << "4) Return to main menu." << endl;
+	cout << "Enter: ";
+	do
+	{
+		cin >> choice;
+		if (choice <= 0 || choice > 4)
+		{
+			cout << "Please enter a valid option: ";
+			continue;
+		}
+	}
+	
+	switch (choice)
+	{
+		case 1:
+			newAppliance();
+			break;
+		case 2:
+			newDigitalMedia();
+			break;
+		case 3:
+			newFurniture();
+			break;
+		case 4:
+			mainMenu();
+			break;
+	}
+}
+
+void newAppliance()
+{
+	char continueNewItem = 0;
+	
+	cout << "New Appliance" << endl;
+	cout << "To continue, enter 'Y': ";
+	cin >> continueNewItem;
+	if (continueNewItem != 'Y')
+	{
+		mainMenu();
+	}
+	cout << endl;
+	
+	string manufacturer = "";
+	cout << "Enter manufacturer: ";
+	cin >> manufacturer;
+	setManufacturer(manufacturer);
+	cout << endl;
+	
+	string color = "";
+	cout << "Enter color: ";
+	cin >> color;
+	setColor(color);
+	cout << endl;
+	
+	string description = "";
+	cout << "Enter description: ";
+	cin >> description;
+	setDescription(description);
+	cout << endl;
+	
+	double cost = 0;
+	cout << "Enter cost: ";
+	cin >> cost;
+	setCost(cost);
+	cout << endl;
+}
+
+void newDigitalMedia()
+{
+	char continueNewItem = 0;
+	
+	cout << "New Digital Media" << endl;
+	cout << "To continue, enter 'Y': ";
+	cin >> continueNewItem;
+	if (continueNewItem != 'Y')
+	{
+		mainMenu();
+	}
+	cout << endl;
+	
+	string manufacturer = "";
+	cout << "Enter manufacturer: ";
+	cin >> manufacturer;
+	setManufacturer(manufacturer);
+	cout << endl;
+	
+	string description = "";
+	cout << "Enter description: ";
+	cin >> description;
+	setDescription(description);
+	cout << endl;
+	
+	double cost = 0;
+	cout << "Enter cost: ";
+	cin >> cost;
+	setCost(cost);
+	cout << endl;
+}
+
+void newFurniture()
+{
+	char continueNewItem = 0;
+	
+	cout << "New Furniture" << endl;
+	cout << "To continue, enter 'Y': ";
+	cin >> continueNewItem;
+	if (continueNewItem != 'Y')
+	{
+		mainMenu();
+	}
+	cout << endl;
+	
+	string manufacturer = "";
+	cout << "Enter manufacturer: ";
+	cin >> manufacturer;
+	setManufacturer(manufacturer);
+	cout << endl;
+	
+	string color = "";
+	cout << "Enter color: ";
+	cin >> color;
+	setColor(color);
+	cout << endl;
+	
+	string description = "";
+	cout << "Enter description: ";
+	cin >> description;
+	setDescription(description);
+	cout << endl;
+	
+	double cost = 0;
+	cout << "Enter cost: ";
+	cin >> cost;
+	setCost(cost);
+	cout << endl;
+}
+
+
