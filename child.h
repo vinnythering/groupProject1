@@ -6,7 +6,7 @@
 
 using namespace std;
 
-class appliance {
+class appliance: public Item {
 	public: 
 	
 	
@@ -16,7 +16,7 @@ class appliance {
 		appliance();
 };
 
-class digitalMedia {
+class digitalMedia: public Item  {
 	
 	public: 
 	
@@ -28,7 +28,7 @@ class digitalMedia {
 		digitalMedia();
 };
 
-class furniture {
+class furniture: public Item  {
 	
 	public:
 	
