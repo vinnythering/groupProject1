@@ -9,8 +9,6 @@ using namespace std;
 class appliance {
 	private:
 		
-		
-	public:
 		appliance();
 		appliance();
 };
@@ -19,7 +17,6 @@ class digitalMedia {
 	private:
 		
 		
-	public:
 		digitalMedia();
 		digitalMedia();
 };
@@ -28,7 +25,6 @@ class furniture {
 	private:
 		
 		
-	public:
 		furniture();
 		furniture();
 };
