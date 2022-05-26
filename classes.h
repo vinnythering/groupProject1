@@ -23,7 +23,6 @@ class item {
 		string itemDescription;
 		double price;
 	
-	public:
 		item();
 		item(string, int , double);
 
