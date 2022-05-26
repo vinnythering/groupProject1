@@ -7,6 +7,12 @@
 using namespace std;
 
 void mainMenu();
+void newItem();
+void newAppliance();
+void newDigitalMedia();
+void newFurniture();
+void quitProgram();
+int sku();
 
 int main()
 
