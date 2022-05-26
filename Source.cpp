@@ -131,6 +131,9 @@ void newItem()
 void newAppliance()
 {
 	char continueNewItem = 0;
+	int sku;
+	
+	sku[] = sku();
 	
 	cout << "New Appliance" << endl;
 	cout << "To continue, enter 'Y': ";
@@ -169,6 +172,9 @@ void newAppliance()
 void newDigitalMedia()
 {
 	char continueNewItem = 0;
+	int sku;
+	
+	sku[] = sku();
 	
 	cout << "New Digital Media" << endl;
 	cout << "To continue, enter 'Y': ";
@@ -201,6 +207,9 @@ void newDigitalMedia()
 void newFurniture()
 {
 	char continueNewItem = 0;
+	int sku;
+	
+	sku[] = sku();
 	
 	cout << "New Furniture" << endl;
 	cout << "To continue, enter 'Y': ";
@@ -233,7 +242,7 @@ void newFurniture()
 	cout << "Enter cost: ";
 	cin >> cost;
 	setCost(cost);
-	cout << endl;
+	cout << endl;	
 }
 
 
@@ -250,3 +259,12 @@ void quitProgram()
 	outfile << manufacturer.furniture[] << " " << color.furniture[] << " " << description.furniture[] << " " << cost.furniture[] << " " << sku.furniture[] << endl;
 		
 }
+
+int sku()
+{
+	int sku;
+	sku++;
+	return sku;
+}
+
+
