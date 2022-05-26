@@ -14,7 +14,6 @@ class inventory {
 		
 	public:
 		inventory();
-		inventory();
 };
 
 class item {
