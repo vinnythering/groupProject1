@@ -6,29 +6,36 @@
 
 using namespace std;
 
-class appliance {
+class appliance: public Item {
+	public: 
+	
+	
 	private:
 		
-		
-	public:
 		appliance();
 		appliance();
 };
 
-class digitalMedia {
+class digitalMedia: public Item  {
+	
+	public: 
+	
+	
 	private:
 		
 		
-	public:
 		digitalMedia();
 		digitalMedia();
 };
 
-class furniture {
+class furniture: public Item  {
+	
+	public:
+	
+	
 	private:
 		
 		
-	public:
 		furniture();
 		furniture();
 };

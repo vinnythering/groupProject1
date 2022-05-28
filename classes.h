@@ -14,7 +14,6 @@ class inventory {
 		
 	public:
 		inventory();
-		inventory();
 };
 
 class item {
@@ -24,7 +23,6 @@ class item {
 		string itemDescription;
 		double price;
 	
-	public:
 		item();
 		item(string, int , double);
 
