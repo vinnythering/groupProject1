@@ -7,12 +7,22 @@
 using namespace std;
 
 void mainMenu();
-void newItem();
-void newAppliance();
-void newDigitalMedia();
-void newFurniture();
+void cashHandling();
+void employeeInformation();
+void inventory();
+void sales();
 void quitProgram();
-int sku();
+void revenue();
+void tips();
+void cashInBank();
+void employeeData();
+void positions();
+void scheduling();
+void foodOnHand();
+void materialsOnHand();
+void ordering();
+void sale();
+void refund();
 
 int main()
 
@@ -72,11 +82,11 @@ void cashHandling()
 {
 	int choice = 0;
 	
-	cout << "New Item" << endl << endl;
+	cout << "Cash Handling" << endl << endl;
 	cout << "Enter a number to choose a menu option." << endl;
-	cout << "1) Add appliance." << endl;
-	cout << "2) Add digital media." << endl;
-	cout << "3) Add furniture" << endl;
+	cout << "1) Today's revenue." << endl;
+	cout << "2) Today's tips." << endl;
+	cout << "3) Cash in bank." << endl;
 	cout << "4) Return to main menu." << endl;
 	cout << "Enter: ";
 	do
@@ -87,23 +97,189 @@ void cashHandling()
 			cout << "Please enter a valid option: ";
 			continue;
 		}
-	}
+	} while (choice <=0 || choice > 4);
 	
 	switch (choice)
 	{
 		case 1:
-			newAppliance();
+			revenue();
 			break;
 		case 2:
-			newDigitalMedia();
+			tips();
 			break;
 		case 3:
-			newFurniture();
+			cashInBank();
 			break;
 		case 4:
 			mainMenu();
 			break;
 	}
+}
+
+void employeeInformation()
+{
+	int choice = 0;
+	
+	cout << "Employee Information" << endl << endl;
+	cout << "Enter a number to choose a menu option." << endl;
+	cout << "1) Employee Data." << endl;
+	cout << "2) Positions." << endl;
+	cout << "3) Scheduling." << endl;
+	cout << "4) Return to main menu." << endl;
+	cout << "Enter: ";
+	do
+	{
+		cin >> choice;
+		if (choice <= 0 || choice > 4)
+		{
+			cout << "Please enter a valid option: ";
+			continue;
+		}
+	} while (choice <=0 || choice > 4);
+	
+	switch (choice)
+	{
+		case 1:
+			employeeData();
+			break;
+		case 2:
+			positions();
+			break;
+		case 3:
+			scheduling();
+			break;
+		case 4:
+			mainMenu();
+			break;
+	}
+}
+
+void inventory()
+{
+	int choice = 0;
+	
+	cout << "Inventory" << endl << endl;
+	cout << "Enter a number to choose a menu option." << endl;
+	cout << "1) Food on Hand." << endl;
+	cout << "2) Materials on Hand." << endl;
+	cout << "3) Ordering." << endl;
+	cout << "4) Return to main menu." << endl;
+	cout << "Enter: ";
+	do
+	{
+		cin >> choice;
+		if (choice <= 0 || choice > 4)
+		{
+			cout << "Please enter a valid option: ";
+			continue;
+		}
+	} while (choice <=0 || choice > 4);
+	
+	switch (choice)
+	{
+		case 1:
+			foodOnHand();
+			break;
+		case 2:
+			materialsOnHand();
+			break;
+		case 3:
+			ordering();
+			break;
+		case 4:
+			mainMenu();
+			break;
+	}
+}
+
+void sales()
+{
+	int choice = 0;
+	
+	cout << "Sales" << endl << endl;
+	cout << "Enter a number to choose a menu option." << endl;
+	cout << "1) Input a sale." << endl;
+	cout << "2) Refund a sale." << endl;
+	cout << "3) Return to main menu." << endl;
+	cout << "Enter: ";
+	do
+	{
+		cin >> choice;
+		if (choice <= 0 || choice > 3)
+		{
+			cout << "Please enter a valid option: ";
+			continue;
+		}
+	} while (choice <=0 || choice > 3);
+	
+	switch (choice)
+	{
+		case 1:
+			sale();
+			break;
+		case 2:
+			refund();
+			break;
+		case 3:
+			mainMenu();
+			break;
+	}
+}
+
+void revenue()
+{
+	cout << "Sales today:" << endl;
+	cout << 
+}
+
+void tips()
+{
+
+}
+
+void cashInBank()
+{
+
+}
+
+void employeeData()
+{
+
+}
+
+void positions()
+{
+
+}
+
+void scheduling()
+{
+
+}
+
+void foodOnHand()
+{
+
+}
+
+void materialsOnHand()
+{
+
+}
+
+void ordering()
+{
+
+}
+
+void sale();
+{
+
+}
+
+void refund();
+{
+
 }
 
 void newAppliance()
